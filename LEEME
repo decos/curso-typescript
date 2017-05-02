@@ -1,0 +1,39 @@
+--NODE es una plataforma de desarrollo para aplicaciones web.
+--Asi como podemos desarrollar aplicaciones usando un servidor Tomcat o Apache mediante diversos lenguajes como PHP o Java 
+--NODE nos permite desarrollarlas usando Javascript, de lado del servidor.
+--NODE JS es la herramienta principal y NPM es un sistema que permite cubrir las dependencias de tu aplicacion sin preocuparte por nada.
+
+-- INSTALAR NODE JS
+	--Ejecutar como root:
+		curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+	--Luego instale, como root:
+		yum -y install nodejs
+	--Para compilar e instalar extensiones nativas desde npm se necesitará también instalar las herramientas de compilación:
+		yum install gcc-c++ make
+
+-- INSTALAR TYPESCRIPT
+	--Ejecutar como root:
+		npm install -g typescript
+
+Fuentes:
+	https://nodejs.org/es/download/package-manager/#enterprise-linux-and-fedora
+	https://www.typescriptlang.org/
+
+-- HOLA MUNDO
+	tsc -w *.ts
+	Comprueba si existe algun fichero con extension '.ts' listo para actualizar.
+
+--VARIABLE Y TIPOS DE DATOS
+	var nombre:string =  "Diego";
+	var apellido:any = "Abanto"
+	var edad:number = 25;
+	var programador:boolean = true;
+	var langs: Array<string> = ["PHP", "JavaScript", "CSS"];
+
+--DFERENCIAS ENTRE LET Y VAR
+	LET = a nivel del bloque
+	VAR = a nivel de la función
+
+--FUNCIONES Y TIPADO
+	Ejemplo:
+		function devuelveNumero(num:number):string{
