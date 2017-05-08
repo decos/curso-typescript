@@ -19,6 +19,9 @@ Fuentes:
 	https://nodejs.org/es/download/package-manager/#enterprise-linux-and-fedora
 	https://www.typescriptlang.org/
 
+-- EN SUBLIME TEXT REALIZAR LO SIGUIENTE:
+	`Preferences` -> `Package Settings` -> `TypeScript` -> `Plugin Settings - User`, and add `"typescript_auto_format": false`
+
 -- HOLA MUNDO
 	tsc -w *.ts
 	Comprueba si existe algun fichero con extension '.ts' listo para actualizar.
@@ -37,3 +40,16 @@ Fuentes:
 --FUNCIONES Y TIPADO
 	Ejemplo:
 		function devuelveNumero(num:number):string{
+
+--FUNCIONES FLECHA
+	En vez de utilizar la palabra funcion utilizamos (=>) en funciones callback o funciones anonimas
+
+--DECORADORES
+	- Extender la funcionalidad de una clase 
+
+	PROBLEMA
+	[ts] Experimental support for decorators is a feature that is subject to change in a future release. Set the 'experimentalDecorators' option to remove this warning.
+
+	SOLUCION
+	Sublime Text > Preferences > Settings
+		"typescript_tsdk": "/usr/local/lib/node_modules/typescript/lib"
