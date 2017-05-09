@@ -1,10 +1,31 @@
+//INICIO DEL MODULO
+module Tienda{
+	export class Ropa{
+		constructor(public titulo:string){
+			alert(titulo);
+		}
+	}
+
+	export class Informatica{
+		constructor(public titulo:string){
+			alert('Tienda de tecnologia: ' + titulo);
+		}
+	}
+}
+
+import Informatica = Tienda.Informatica;
+let cargar_informatica = new Informatica('supertienda');
+//FIN DEL MODULO
+
+
+
 //DECORADOR
 //Donde utilicemos la funcion arranque() le vamos añadir un nuevo metodo llamado lanzar()
 function arranque(lanzar: string){
 	return function(target: Function){
 		//
 		target.prototype.lanzamiento = function(): void{
-			console.log(lanzar);
+			alert(lanzar);
 		}
 
 	}
